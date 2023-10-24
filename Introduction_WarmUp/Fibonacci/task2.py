@@ -16,5 +16,22 @@ def main():
     print(f"Total time: {time_elapsed} secs")
 
 
+def fibonacci2(n):
+    prev = 0
+    curr = 1
+    for i in range(n):
+        prev, curr = curr, prev + curr
+    return prev
+
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    prev = curr = 1
+    for i in range(2, n + 1):
+        prev, curr = curr, prev + curr
+    return prev
+
+
 if __name__ == '__main__':
     main()
