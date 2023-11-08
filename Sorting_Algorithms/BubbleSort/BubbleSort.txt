@@ -1,0 +1,16 @@
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they
+are in the wrong order.
+
+The provided Python code implements the Bubble Sort algorithm, which sorts an array by repeatedly comparing
+adjacent elements and swapping them if they are in the wrong order. The algorithm iterates through the
+array multiple times, with each pass pushing the largest unsorted element to its correct position at the end.
+The code includes an optimization: if no swaps are made during a pass, the array is already sorted, and the
+sorting process stops. The example initializes an array, applies the bubbleSort function to sort it,
+and prints the sorted array. After sorting, the output is: [11, 12, 22, 25, 34, 64, 90], indicating
+ascending order.
+
+Time Complexity:
+O(n^2). However in practice, this optimized version might take less time as when array gets sorted,
+function would return.
+
+Auxiliary Space: O(1).

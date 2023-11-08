@@ -1,0 +1,15 @@
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
+ from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+
+
+Python Program for Selection Sort
+The provided Python code demonstrates the Selection Sort algorithm.
+Selection Sort has a time complexity of O(n^2). In each iteration, the code finds the minimum element’s
+index in the unsorted portion of the array and swaps it with the current index’s element.
+This gradually sorts the array from left to right. The example initializes an array, applies the selectionSort
+function to sort it, and then prints the sorted array in ascending order.
+The sorted array is obtained by repeatedly finding the smallest element in the unsorted portion
+and placing it in its correct position, resulting in an ordered array.
+
+Time Complexity:  O(n2).
+Auxiliary Space: O(1).
