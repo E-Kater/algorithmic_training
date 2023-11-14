@@ -1,4 +1,5 @@
 ITER = 100
+EPS = 10 ** (-8)
 
 
 def f(x, c):
@@ -8,12 +9,15 @@ def f(x, c):
 def find_root(c):
     left = -10
     right = 10
-    for _ in range(ITER):
+    for i in range(ITER):
         mid = (left + right) / 2
-        if f(mid, c) < 0:
+        if abs(f(mid, c)) < EPS:
+            break
+        if f(mid, c) <= 0:
             left = mid
         else:
             right = mid
+
     return (left + right) / 2
 
 
