@@ -5,7 +5,7 @@ import random
 # Sorts array a[0..n-1] using Bogo sort
 def bogoSort(a):
     n = len(a)
-    while is_sorted(a) == False:
+    while not is_sorted(a):
         shuffle(a)
 
 
