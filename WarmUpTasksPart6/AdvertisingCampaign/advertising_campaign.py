@@ -1,7 +1,14 @@
 import json
 
-
 # [campaign_id][vendor_id][event][date]
+
+dct = {
+    ("1", "2", "click"): [1, 1, 1, 1],  # sorted list
+    ("1", "4", "impression"): [1, 2, 1],
+    ("3", "2", "impression"): [1, 1]
+}
+
+
 class Message:
     def __init__(self, campaign_id, vendor_id, date, event):
         self.campaign_id = campaign_id
@@ -32,4 +39,3 @@ class AdvertisingCampaign:
 
 if __name__ == '__main__':
     adv = AdvertisingCampaign(dict())
-
