@@ -11,3 +11,4 @@ if __name__ == '__main__':
             mid = c
     ans = half + mid + half[::-1]
     print(ans)
+
