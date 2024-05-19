@@ -1,0 +1,81 @@
+
+Time limit	1 second
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+ICPC — International Collegiate Programming Contest is an annual multi-tiered competitive programming competition among the universities of the world. During the contest teams solve programming problems (just like you right now!)
+Usually, team result is deﬁned by two numbers: number of solved problems and penalty — integer number which denotes time the team spent for solving problems. In standings table teams are sorted according to the number of solved problems, and for teams with equal number of solved problems, ones with smaller penalty go ﬁrst. If two teams have same number of solved problems and penalty, let’s suppose they are sorted in alphabetical order.
+You are given results of all the teams on the latest ICPC ﬁnal round and you are asked to sort teams according to their result and group them according to the number of solved problems.
+
+Input format
+First line contains one integer number
+1
+≤
+N
+≤
+1
+0
+0
+0
+ — number of teams who took part in the ﬁnal round. Next
+N
+ lines contain information about round results. Each line represent one team and contains following values, separated by space character:
+Team name: 1-100 lowercase letters
+Number of solved problems: integer number
+0
+≤
+p
+i
+≤
+1
+0
+0
+Penalty: integer number
+0
+≤
+t
+i
+≤
+1
+0
+9
+Output format
+Group teams by number of solved problems and for each group print names of teams in this group, sorted by penalty. Each line should start with integer number
+p
+ followed by names of all teams who solved exactly
+p
+ problems. Team names should be separated with space character and should be printed in order in which they will appear in sorted standings table (ascending penalty order, for equal penalty — alphabetical order of team name).
+Lines for problems should go in descending
+p
+ order.
+If there are no teams who solved particular number of problems, you should not print the line for this number of problems.
+
+Sample 1
+Input	Output
+5
+caltech 7 1
+itmo 9 5
+mit 10 12
+msu 10 11
+mipt 10 10
+10 mipt msu mit
+9 itmo
+7 caltech
+Sample 2
+Input	Output
+4
+mipt 10 10
+msu 9 10
+mit 10 12
+itmo 9 12
+10 mipt mit
+9 msu itmo
+Sample 3
+Input	Output
+6
+mipt 10 10
+msu 10 10
+itmo 10 10
+mit 10 10
+miptu 10 10
+mephi 10 11

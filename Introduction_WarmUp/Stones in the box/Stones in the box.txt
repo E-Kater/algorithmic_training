@@ -1,0 +1,72 @@
+
+Time limit	2 seconds
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+You have a transparent box. Box contains stationary obstacle (which do not move) and stones which can move if you shake or rotate the box.
+You wonder what will happen if you rotate the box 90 degrees clockwise. Write a program which will get the answer (The box is not yours, so, you’d better solve this question theoretically, without risky experiments with rotating a box).
+You are given a rectangular array which denoted objects in the box:
+
+‘#’ — stationary obstacle
+‘O’ — stone
+‘.’ — empty space
+When you rotate a box, stones may fall because of gravity. You should build an array which will describe state of the box after rotation.
+
+Input format
+First line contains two integer numbers
+1
+≤
+N
+,
+M
+≤
+5
+0
+0
+ — height and width of the box respectively. Each of next
+N
+ lines contain
+M
+ characters (without space character between them). Each character is ‘#’ or ‘O’ or ‘.’.
+It is guaranteed that all stones in the initial state lie on border of the box, on obstacles or on other stones.
+
+Output format
+Print M lines with N character in each. Each character should be ‘#’ or ‘O’ or ‘.’ — the state of the box after rotation 90 degrees clockwise and after all stones will fall down and take their places.
+Sample 1
+Input	Output
+1 3
+O.O
+.
+O
+O
+Sample 2
+Input	Output
+2 4
+O.#.
+OO#.
+O.
+OO
+##
+..
+Sample 3
+Input	Output
+3 6
+OO#.#.
+OOO#..
+OOO.O.
+.OO
+.OO
+OO#
+O#.
+O.#
+O..
+Notes
+Sample 1:
+PIC
+Sample 2:
+PIC
+
+Sample 3:
+PIC
+
+Скачать условие задачи

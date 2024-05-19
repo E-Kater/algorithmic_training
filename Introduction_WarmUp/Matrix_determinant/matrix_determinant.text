@@ -1,0 +1,57 @@
+
+Time limit	1 second
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+One of your tasks in the Math exam is to calculate determinant of a matrix. You don’t want to calculate it manually, so, you decided to write a program which will make it for you.
+Input format
+First line contains single integer number
+2
+≤
+N
+≤
+7
+ — number of rows and columns in the matrix. Next
+N
+ lines contain
+N
+ integer values each. j-th value in i-th line deﬁnes item in i-th row j-th column of the matrix:
+−
+1
+0
+0
+≤
+A
+i
+j
+≤
+1
+0
+0
+.
+Output format
+Print single integer number — determinant of matrix A.
+Sample 1
+Input	Output
+2
+1 1
+1 2
+1
+Sample 2
+Input	Output
+3
+1 2 3
+4 5 6
+7 8 9
+0
+Sample 3
+Input	Output
+5
+21 16 62 -28 -76
+-86 -74 54 16 -66
+-52 14 -26 15 -50
+-39 -28 -34 78 -17
+71 -90 92 8 43
+492381192
+Notes
+You may use linalg.det() from numpy package to check your solution, but numpy package cannot be imported in submitted solution.
