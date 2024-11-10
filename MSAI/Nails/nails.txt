@@ -1,0 +1,8 @@
+ Some nails are hammered on a straight plank. Any two nails can be joined by a thread. Connect some pairs of nails with a thread, so that to each nail will be tied with at least one thread, and the total length of all threads will be minimal.
+► Sort the nail’s coordinates in array а. Let dp[i] equals to the minimal total length of all thread, when any two nails starting from the first one (the nails are numbered starting from 1) till i-th are connected with the thread.
+If n = 2, both nails must be joined with the thread, so
+dp[2] = a2 – a1
+If n = 3, we must connect first nail with the second, and second with the third. So
+dp[3] = a3 – a1
+To add i-th nail one has two possibilities to join it with the thread:
+1) connect first i – 2 nails among themselves, the (i – 1)-th nail connect to the i-th. The total length of the thread for such connection equals to dp[i – 2] + a[i] – a[i – 1].

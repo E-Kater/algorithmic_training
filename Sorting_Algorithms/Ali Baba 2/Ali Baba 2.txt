@@ -1,0 +1,46 @@
+D. Ali Baba 2
+
+Time limit	5 seconds
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Ali Baba successfully brought treasures you helped him to choose in Ali Baba 1 Problem. Now he returned back to cave with treasures again and this time he has taken a very big bag to be able to take more treasures.
+When he entered the cave, he found a room in it that contains 0 ≤ N ≤ 100000 bunches of golden sand.
+For each bunch of sand, Ali Baba estimated it's weight (in grams) and it's cost (he counts cost in dollars, because he loves green color).
+His bag can hold not more than 0 ≤ W ≤ 109 grams of sand in total.
+Also, Ali Baba counts cost of each bunch or it's part to be an integer number of dollars. He do not take cents into account. He doesn't like cents, because they are not green.
+Help Ali Baba to take out as many golden sand as he can, and maximize total cost.
+Input format
+
+First line contains two integer numbers divided by space character: 0 ≤ N ≤ 105 and 0 ≤ W ≤ 109 — number of bunches of golden sand and carrying capacity of a bag in grams respectively.
+Next N lines contain information about bunches of golden sand. Each line contains two integer numbers: 0 ≤ ci ≤ 109 and 0 ≤ wi ≤ 109 — cost ($) and weight (g) of i-th bunch respectively.
+Output format
+
+Single integer number — maximum total cost in dollars of golden sand that Ali Baba can take out of the cave.
+Sample 1
+
+Input	Output
+3 2
+10 1
+5 1
+1000 2
+1000
+Sample 2
+
+Input	Output
+1 100
+400 300
+133
+Sample 3
+
+Input	Output
+4 3
+10 3
+4 1
+4 1
+4 1
+12
+Notes
+
+Ali Baba counts cost of each bunch (or it's part) to be an integer number. He uses the following formula: c = ci * w // wi, where ci, wi — cost and weight of i-th bunch, w — weight of gold sand taken from this bunch, c — obtained cost, and // — integer division.
+E.g. if he takes 100g from bunch with cost=500$ and weight=300g, the cost of this 100g will be (500 * 100 // 300) = 166.

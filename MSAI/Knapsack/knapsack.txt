@@ -1,0 +1,45 @@
+A. Ali Baba 3
+
+Time limit	10 seconds
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Ali Baba returned back to cave, and took his knapsack with carrying capacity to take treasures out of the cave. When he came into cave he found a room with  gold bars in it. For each bar he knows weight  and cost . As usual, he wants to maximize total cost of treasures taken out. The bars are undividable.
+Help Ali Baba and write a program which will calculate maximum obtainable profit and gives indices of items (items are enumerated from 1) he should place into knapsack to maximize total cost.
+Input format
+
+First line contains two integer numbers:  and  — carrying capacity of knapsack and number of items in the cave.
+Second line contains N positive integer numbers w1, w2, ..., wN, divided by space character — weights of items.
+Third line contains N positive integer numbers c1, c2, ..., cN, divided by space character — costs of elements.
+Output format
+
+On the first line print maximum total cost of bars Ali Baba can place into knapsack.
+On the second line print number of items K which allow to maximize total cost.
+On the third line print K positive integer numbers separated by space character — indices of items which maximize total cost. Items are enumerated from 1!
+Sample 1
+
+Input	Output
+8 4
+3 3 5 6
+3 5 10 14
+15
+2
+2 3
+Sample 2
+
+Input	Output
+100 2
+1 2
+10 20
+30
+2
+1 2
+Sample 3
+
+Input	Output
+1 1
+10
+10
+0
+0
+Скачать условие задачи
