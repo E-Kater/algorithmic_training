@@ -1,0 +1,54 @@
+
+Time limit	10 seconds
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Implement data structure to support dynamic RMQ queries. Given initial array a with 0 < N ≤ 105 elements and 0 < M ≤ 104 requests of 2 types:
+? l r — RMQ(l, r)
++ i val — update(i, val) (a[i] := val)
+Provide answer for each RMQ request.
+Input format
+
+First line contains two integer numbers: 0 < N ≤ 105; 0 < M ≤ 104 — number of elements in the array and number of requests.
+Next line contains N integer numbers ai — elements of initial array, |ai| ≤ 105.
+Each of following M lines contains request of one of 2 types:
+? l r — RMQ(l, r). 0 ≤ l < r ≤ N
+or
++ i val — update(i, val). 0 ≤ i < N; |val| < 105
+Output format
+
+For each "?" request provide answer — minimum value on requested range: RMQ(l, r)=min{a[i]: i∈ [l; r)}.
+Sample 1
+
+Input	Output
+3 3
+5 5 5
+? 0 3
++ 1 2
+? 0 3
+5
+2
+Sample 2
+
+Input	Output
+3 5
+1 2 3
+? 0 3
+? 1 3
+? 2 3
++ 0 2
+? 0 3
+1
+2
+3
+2
+Sample 3
+
+Input	Output
+5 3
+1 2 3 4 -5
+? 0 3
++ 0 5
+? 0 3
+1
+2
