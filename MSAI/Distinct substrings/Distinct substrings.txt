@@ -1,0 +1,33 @@
+
+Time limit	10 seconds
+Memory limit	512Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Given string s: 0 < |s| ≤ 3000. Calculate number of distinct substrings in this string.
+Input format
+
+The single line contains string s: 0 < |s| ≤ 3000, which consists only of lowercase latin letters. String is terminated with line break character.
+Output format
+
+Print single integer number — number of distinct substrings in the given string.
+The answer is considered to be correct if it is given with asbolute error no more than 10:
+
+Sample 1
+
+Input	Output
+abc
+6
+Sample 2
+
+Input	Output
+aba
+5
+Sample 3
+
+Input	Output
+aabaaba
+17
+Notes
+
+If probability of collision in your hash is small enough and small error is suitable, you may omit explicit comparison of strings.
+Скачать условие задачи

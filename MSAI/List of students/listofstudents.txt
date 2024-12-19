@@ -1,0 +1,38 @@
+
+Time limit	8 seconds
+Memory limit	256Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Your teacher on Algorithms and Data structures in MSAI wants to calculate number of students who solved at least one problem in home assignments.
+He has logins of students for each successful submit. Please, help him to obtain number of students who solved at least one problem — this is a number of distinct logins in given list.
+Input format
+
+First line contains integer number 0 < N ≤ 1000 — number of successful submits. Each of following N lines contains string si: 0 < |si| ≤ 1000, which contains latin letters and digits only (a-z, A-Z, 0-9) — login of student who made this successful submission.
+Output format
+
+Print single integer number — number of students who solved at least one problem.
+Sample 1
+
+Input	Output
+3
+Gennadiy
+Gennadiy
+Gennadiy
+1
+Sample 2
+
+Input	Output
+7
+Knuth
+Kormen
+Dijkstra
+Kormen
+Dijkstra
+Dijkstra
+Dijkstra
+3
+Notes
+
+1. Yes, you can use all python built-ins
+2. Yes, this problem is extremely easy =)
+Скачать условие задачи
